@@ -108,7 +108,7 @@ def get_score_n(journal_dfs,docs_dfs,root_path,top_n=10,d_top=100):
     similarity_df = pd.DataFrame(similarity, columns=['qid', 'docno', 'j_docno', 'scores','rank'])
     similarity_path=f'''{root_path}experiments'''
     mkdir_p(similarity_path)
-    similarity_df.to_csv('%s/ner_manual_both_sens_similarity_score_sw_biobert.csv'%similarity_path, index=None, sep='\t')
+    similarity_df.to_csv('%s/ner_manual_both_sens_similarity_score_sw.csv'%similarity_path, index=None, sep='\t')
     return similarity_df
 
 #load dfs
