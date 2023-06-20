@@ -26,7 +26,7 @@ def mkdir_p(path):
 import re
 import string
 PUNCTUATIONS = string.punctuation.replace('.','')
-
+mkdir_p("./docs")
 
 def remove_punctuation(text):
   trans = str.maketrans(dict.fromkeys(PUNCTUATIONS, ' '))
@@ -147,6 +147,6 @@ def get_vectors(dfs):
 
 
 
-docs_dfs=pd.read_csv("./docs/gen_docs_top_100.csv",sep='\t')
+docs_dfs=pd.read_csv("./docs/docs_top_100.csv",sep='\t')
 docs_dfs_vec=get_vectors(docs_dfs)
-docs_dfs_vec.to_csv('./docs/gen_docs_func_all_top_sen_ner_manual_covid_bert.csv', index=None, sep=';')
+docs_dfs_vec.to_csv('./docs/docs_func_all_top_sen_ner_manual_covid_bert.csv', index=None, sep=';')
