@@ -17,7 +17,9 @@ To install the required dependencies, run the following command:
 pip install -r requirements.txt
 ```
 
+## Dataset
 
+Access the dataset from here: [health misinformation dataset](https://github.com/ikr3-lab/TREC-CLEF-HealthMisinfoSubdatasets)
 
 ## Paper
 
